@@ -27,7 +27,7 @@ function viewCart() {
     return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
   } else { for (var i = 0; i < cart.length; i++)
   { 
-    return `${cartString} ${cart[iiI].itemName} at $${cart[iiI].itemPrice}, ${cart[iiI].itemName} at $${cart[iiI].itemPrice}, and ${cart[iiI].itemName} at $${cart[iiI].itemPrice}.`;
+    return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}, ${cart[1].itemName} at $${cart[1].itemPrice}, and ${cart[2].itemName} at $${cart[2].itemPrice}.`;
   }
   }console.log(viewCart())
 }
@@ -50,5 +50,5 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you."
   } else if (cardNumber) {
     cart = []
-return `Your total cost is $${total(totalPrice)}, which will be charged to the card ${cardNumber}.`
+return `Your total cost is $${}, which will be charged to the card ${cardNumber}.`
 } }
