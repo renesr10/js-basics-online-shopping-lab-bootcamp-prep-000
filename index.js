@@ -27,7 +27,7 @@ function viewCart() {
     return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
   } else { for (var i = 0; i < cart.length; i++)
   {
-    return `${cartString} ${cart[i].itemName} at $${cart[i].itemPrice}, ${cart[i].itemName} at $${cart[i].itemPrice}, and ${cart[4].itemName} at $${cart[4].itemPrice}.`;
+    return `${cartString} ${cart[i].itemName} at $${cart[i].itemPrice}, ${cart[i].itemName} at $${cart[i].itemPrice}, and ${cart[2].itemName} at $${cart[2].itemPrice}.`;
   }
   }
 }
