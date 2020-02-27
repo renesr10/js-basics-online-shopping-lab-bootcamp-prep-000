@@ -19,7 +19,7 @@ return `${item} has been added to your cart.`;
 function viewCart() {
   if (cart.length === 0){
     return "Your shopping cart is empty."
-  } var cartString = "In your cart, you have ";
+  } var cartString = "In your cart, you have";
   if (cart.length === 1) {
     return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}`
   }
