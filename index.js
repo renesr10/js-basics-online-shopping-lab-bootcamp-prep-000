@@ -25,9 +25,9 @@ function viewCart() {
     return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   } else if (cart.length === 2) {
     return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
-  } else { for (var i = 0; i < cart.length; i++)
+  } else { for (var i = 0; i < cart.length - 1; i++)
   { var iiI = i
-    return `${cartString} ${cart[iiI].itemName} at $${cart[iiI].itemPrice}, ${cart[iiI].itemName} at $${cart[iiI].itemPrice}, and ${cart[iiI].itemName} at $${cart[iiI].itemPrice}.`;
+    return `${cartString} ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}, ${cartcart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}, and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`;
   }
   }console.log(viewCart())
 }
