@@ -22,8 +22,8 @@ function viewCart() {
   } var cartString = "In your cart, you have";
   if (cart.length === 1) {
     return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}.`
-  } else {
-    
+  } else (cart.length === 2); {
+    return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
 }
 
