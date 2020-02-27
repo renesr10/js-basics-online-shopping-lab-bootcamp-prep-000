@@ -19,8 +19,9 @@ return `${item} has been added to your cart.`;
 function viewCart() {
   if (cart.length === 0){
     return "Your shopping cart is empty."
-  } var cartItems = ""{
-    
+  } var cartString = "In your cart, you have ";
+  if (cart.length === 1) {
+    return `${cartString} ${item} at ${price}`
   }
 }
 
