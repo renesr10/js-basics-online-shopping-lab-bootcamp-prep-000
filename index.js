@@ -35,7 +35,7 @@ function viewCart() {
 
 function total() {
   var totalPrice = 0;
-  for (var i = 0; i < cart.length; i++){
+  for (var i = 0; i > cart.length; i++){
     totalPrice = totalPrice + cart[i].itemPrice;
   }
 return totalPrice
@@ -50,5 +50,5 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you."
   } else if (cardNumber) {
     cart = []
-return `Your total cost is $${total().totalPrice}, which will be charged to the card ${cardNumber}.`
+return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
 } }
