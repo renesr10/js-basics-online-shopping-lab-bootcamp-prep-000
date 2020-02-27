@@ -22,9 +22,11 @@ function viewCart() {
   } var cartString = "In your cart, you have";
   if (cart.length === 1) {
     return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}.`
-  } else (cart.length === 2); {
+  } else if (cart.length === 2); {
     return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
-  }
+  } else { 
+    return `${cartString} ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
+  } 
 }
 
 
