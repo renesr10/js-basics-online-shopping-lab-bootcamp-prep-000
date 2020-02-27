@@ -19,7 +19,7 @@ return `${item} has been added to your cart.`;
 function viewCart() {
   if (cart.length === 0){
     return "Your shopping cart is empty."
-  } else {
+  } var cartItems = ""{
     
   }
 }
@@ -30,7 +30,6 @@ function total() {
   for (let i = 0; i < cart.length; i++){
     totalPrice = totalPrice + cart[i].itemPrice;
   }
-  
 return totalPrice
 }
 
