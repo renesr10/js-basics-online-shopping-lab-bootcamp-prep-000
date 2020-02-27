@@ -39,10 +39,11 @@ function total() {
     totalPrice += cart[i].itemPrice;
   }
 return totalPrice
+console.log(totalPrice)
 }
 
 function removeFromCart(item) {
-  
+  return "That item is not in your cart."
 }
 
 function placeOrder(cardNumber) {
